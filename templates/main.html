@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TESTING</title>
+    </head>
+    <body>
+        </br>
+        {% for link in links %}
+        <a href="{{ link.get('href') }}">{{ link.renderContents() }}</a> </br>
+        {% endfor %}
+    </body>
+</html>
